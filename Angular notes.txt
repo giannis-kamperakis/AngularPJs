@@ -1,0 +1,15 @@
+Section 5
+SPA (Single Page Application) = A Single Pahe Application is an app that doesn't need to reload the page during its use and works within a Web Browser. The files that contain the code for the site are being dowloaded in the Web Browser that's why the page isn't being loaded again.
+
+With the use of Angular CLI it is easy to create and develop an Angular project. In order to download the Angular CLI we have to install first the node package manager (Node.js). In order to install the Angular CLI we have to run the followin command "npm install -g @angular/cli" and then in order to creat a new project we have to run the following command "ng new <Project-name>"
+
+Section 6
+Angular is a component based framework. A component is a combination of data html template and logics. The component represent an area of a view that shows inside the browser. We can reuse components (nav-bar etc.) For every area we can create a specific component.
+
+We can use the selectors of every component into the html of every component. So we can call different components inside of the html of another component.
+
+In order to generate an Angular component using the Angular CLI we have to use the following command "ng g c <component-name>". The files component.spec.ts are responsible for unit testing.
+
+NgOnInit = the NgOnInit is going to run when the current component is fully loaded in the browser. OnInit is a template.
+
+Data binding = 
