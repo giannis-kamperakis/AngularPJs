@@ -1,1 +1,7 @@
-<p>post works!</p>
+<h1> {{title}} </h1>
+
+<h3> {{fromParent}} </h3>
+
+<app-post-list [fromParent]="postList"></app-post-list>
+
+<button (click)="sendMessage()">Click me!</button>

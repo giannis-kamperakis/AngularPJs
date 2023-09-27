@@ -3,6 +3,8 @@ SPA (Single Page Application) = A Single Pahe Application is an app that doesn't
 
 With the use of Angular CLI it is easy to create and develop an Angular project. In order to download the Angular CLI we have to install first the node package manager (Node.js). In order to install the Angular CLI we have to run the followin command "npm install -g @angular/cli" and then in order to creat a new project we have to run the following command "ng new <Project-name>"
 
+
+
 Section 6
 Angular is a component based framework. A component is a combination of data html template and logics. The component represent an area of a view that shows inside the browser. We can reuse components (nav-bar etc.) For every area we can create a specific component.
 
@@ -12,4 +14,11 @@ In order to generate an Angular component using the Angular CLI we have to use t
 
 NgOnInit = the NgOnInit is going to run when the current component is fully loaded in the browser. OnInit is a template.
 
-Data binding = 
+Data binding = {{title}}
+
+Share data between components = Parent to child component via @input decorator, child to parent component via @output decorator, child to parent when there is Event using the @output decorator and event emitter
+Share data from the child components to parent component -> @ViewChild, @Output or Emitter.
+
+
+
+Section 7
