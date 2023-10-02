@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="text-align: center;">
+  <h1 style="margin-top: 4rem;">Post Form</h1>
+  <input type="text" placeholder="Post Title" style="margin-top: 2rem;" [(ngModel)] = "postTitle">
+  <br>
+  <textarea name="textarea" rows="10" cols="30" style="margin-top: 1rem;" placeholder="Post Details" [(ngModel)] = "postDetail"></textarea>
+  <br>
+  <input type="text" name="typeText" placeholder="Post Image URL" style="margin-top: 1rem;" [(ngModel)] = "postImageURL">
+  <br>
+  <input type="url" name="postURL" placeholder="Post URL" style="margin-top: 1rem;" [(ngModel)] = "postURL" (keyup)="showMessage()">
+  <br>
+  <input type="checkbox" name="checkboxBtn" style="margin-top: 1rem;" (click)="turnYellow()" [(ngModel)] = "addBackground">
+  <label for="checkboxBtn">Add Background</label>
+  
+  <br><br><br>
+  <img [src]="postImageURL">
+  <h2> <span  [class.add-background] = "addBackground"> {{postTitle}} </span> </h2>
+  <p>{{postDetail}} </p>
+  <a [href]="postURL"> {{postURLText}} </a>
+</body>
+</html>

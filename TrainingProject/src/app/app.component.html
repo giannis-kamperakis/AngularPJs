@@ -1,9 +1,24 @@
 <h1>Angular Appliation</h1>
 
-<p>{{messageFromChild}}</p>
+<p [class.text-red] = "boolFlag">{{messageFromChild}}</p> <!-- When the boolFlag variable is true then the element is taking the styling of the specific class -->
 
 <app-navbar></app-navbar>
 
 <app-post [fromParent]="parentMessage" (messageEvent)="receiveMessage($event)"></app-post>
 
 <p>{{emittedMessageFromChild}}</p>
+
+
+<img [src]="imgURL" alt="googleImages">
+
+<h2 [style.color] = "boolFlag ? 'red' : 'blue'"> Style Binding </h2>
+
+<button (click)="buttonClick()"> Click me Again! </button>
+
+<br>
+<input type="text" (keyup)= "onKeyup($event)">
+
+<br>
+<input type="text" (keyup)= "showTemplateVariable($event)">
+
+<input type="text" [(ngModel)] = "userName" (keyup)= "onKeyupTwoWay()">

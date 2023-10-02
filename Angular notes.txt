@@ -23,5 +23,25 @@ Share data from the child components to parent component -> @ViewChild, @Output 
 
 Section 7
 
+String interpolation = in order to show information of a variable, or anything else we must use the string interpolation. An example of it is the following, {{ message }}
 
+Property binding = <img [src]="imgURL" alt="googleImages"> or <img src="{{ imgURL }}" alt="googleImages">
+
+Class binding = <p [class.text-red] = "boolFlag">{{messageFromChild}}</p>
+
+Style binding = <h2 [style.color] = "boolFlag ? 'red' : 'blue'"> Style Binding </h2>, in order to bind and pass some styling to different elements we have to check the DOM style object (https://www.w3schools.com/jsref/dom_obj_style.asp)
+
+Event binding = <button (click)="buttonClick()"> Click me Again! </button>
+
+Event filtering = <input type="text" (keyup)= "onKeyup($event)"> 
+
+Template variable = <input type="text" (keyup)= "showTemplateVariable($event)">
+
+Two way data binding = app.module.ts -> import FormsModule, app.component.html -> [(ngModel)]
+
+Two way vs One way data binding = With one way data binding I can send data from the component to the View but with the two way binding I can send data from the component to the view and vice versa
+
+
+
+Section 8
 
