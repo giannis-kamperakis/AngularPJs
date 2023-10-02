@@ -22,3 +22,6 @@ Share data from the child components to parent component -> @ViewChild, @Output 
 
 
 Section 7
+
+
+
