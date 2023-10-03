@@ -64,9 +64,15 @@ ngIF directive = I created an example in the code
 
 ngTemplate = we use the ngTemplate to render html in a template, in our view
 
-ngSwitchCase = created an example in the code
+(Structural directive) ngSwitchCase = created an example in the code
 
-ngStyle = created an example in the code
+(Attribute directive) ngStyle = created an example in the code
 
-ngClass = with ngClass we can pass classed to the elements of our html files
+(Attribute directive) ngClass = with ngClass we can pass classed to the elements of our html files
+
+Structural vs Attribute directive = with structural directives we can manipulate the objects from the DOM, we can insert them etc. With Attribute directives we have change the appearance of the DOM objects.
+
+
+
+Section 9
 
