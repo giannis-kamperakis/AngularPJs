@@ -45,3 +45,28 @@ Two way vs One way data binding = With one way data binding I can send data from
 
 Section 8
 
+Directives are components without a view. Angular components are directives with a view. We have different types of directives:
+- Component directive = which is an angular directive with a template view
+- Structural directive = which can change the DOM layout by adding and removing DOM elements
+- Attribute directive = which can change the appearance or behavior of an element, component, or another directive
+- Custom directive = which can create our custom directive from scratch
+Generally directives are classes that add additional behavior to elements in any Angular applications. USe Angular's built-in directives to manage forms, lists, styles and what users see.
+
+*ngFor Directive = We use it to render an array inside the view, it is a structural directive, we can manipulate the DOM,   <li *ngFor="let str of stringArray"> {{str}} </li>
+
+Fetching object array using NgFor =   <li *ngFor="let obj of objectArray"> {{obj.id}}, {{obj.postName}} </li>
+
+Angular change detection = created 2 functions addNew() , onDelete(post)
+
+ngFor directive index = we used an alternative on how we can send the index to the js function
+
+ngIF directive = I created an example in the code 
+
+ngTemplate = we use the ngTemplate to render html in a template, in our view
+
+ngSwitchCase = created an example in the code
+
+ngStyle = created an example in the code
+
+ngClass = with ngClass we can pass classed to the elements of our html files
+
