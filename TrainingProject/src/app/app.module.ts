@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { PostService } from './Services/post.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { PostListComponent } from './post-list/post-list.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

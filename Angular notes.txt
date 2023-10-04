@@ -103,3 +103,32 @@ Slice pipe = {{ postArray | slice 2:4` }}
 Customer pipe = new folders under app folder, for example append.pipe.ts, we have also to import the custom pipe into the file app.module.ts
 
 Custom pipes using angular cli = ng g pipe Pipes/appendCLI
+
+
+
+Section 10
+
+What is Angular service = we use angular services to share data and common methods among components whether there is relationship between components or not
+
+Create angular service manually = create a folder named Services, add a new service post.service.ts, 
+
+Dependency Injection = 
+import { Engine } from './Engine';
+
+class Car {
+    private engine: Engine;
+
+    public constructor (engine: Engine) {
+        this.engine = engine;
+    }
+    
+    public startEngine(): void {
+        this.engine.fireCylinders();
+    }
+}
+
+Generate angular service using Angular CLI = ng g s services/user
+
+Usage of angular services = we use services to do some actions and the other classes call the services functions and they perform some changes to the data through the services
+
+Angular interface = ng g i models/post
