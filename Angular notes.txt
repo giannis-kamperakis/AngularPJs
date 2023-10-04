@@ -76,3 +76,30 @@ Structural vs Attribute directive = with structural directives we can manipulate
 
 Section 9
 
+Angular Pipes = they are used to transform the data into a particular format when we only need that data transformed 'in' a template or the HTML view. Some types of Pipes are the following:
+- Uppercase Pipe
+- Lowercase Pipe
+- Decimal / Number Pipe
+- Currency Pipe
+- Date Pipe
+- JSON Pipe
+- Precent Pipe
+- Slice Pipe
+
+Uppercase , Lowercase pipe = {{ title | uppercase }} , {{ title | lowercase }}
+
+Number pipe = {{ count | number }}, {{ count | number: '1.2-2' }}
+
+Currency pipe = {{ price | currency: "JPY" : false : 2.1-1}}, iban.com/currency-codes
+
+Date pipe = angular.io/api/common/DatePipe
+
+JSON pipe = {{ postObj | json }}
+
+Percent pipe = {{ 0.567 | percent : '1.1-1' }}
+
+Slice pipe = {{ postArray | slice 2:4` }}
+
+Customer pipe = new folders under app folder, for example append.pipe.ts, we have also to import the custom pipe into the file app.module.ts
+
+Custom pipes using angular cli = ng g pipe Pipes/appendCLI
