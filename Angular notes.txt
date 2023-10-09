@@ -132,3 +132,38 @@ Generate angular service using Angular CLI = ng g s services/user
 Usage of angular services = we use services to do some actions and the other classes call the services functions and they perform some changes to the data through the services
 
 Angular interface = ng g i models/post
+
+
+
+Section 11
+
+Angular Form types = Template - Driven Form (we get the full control of the form and we can validate the input data as we want) and Reactive Form
+
+Creating a Bootstrap form = we create the bootstrap form (simple form)
+
+NgForm directive = in order to create a form Template-Driven, we have to use special directive which is called ngForm. We also have to import the library FormsModule to the app.module.ts (for more information check AngularForms project)
+
+NgForm Explained & FormGroup Class = In Angular to handle forms we have 2 classes formGroup (we use them with Form Tags) and formControl (we use them with Input fields)
+
+Ng Model & FormControl class = in order to get the values that the user has typed we have to use the directive ngModel in every input element and then we have to use and assign a name to the specific input 
+
+Form Validation = check the app.component.html file
+
+Styling invalid inputs = check the app.component.html file
+
+Form validation types = check the app.component.html file
+
+Validating email input field = check the app.component.html file
+
+Validating text area = check the app.component.html file
+
+Quick fix required not found error = check the app.component.html file
+
+Form submission = we can get the submitted values by using the f parameter from the function onSubmit that is in the file app.component.ts, ngSubmit -> Enables binding AngularJS expressions to onsubmit events.
+
+Disabling the submit button when form is invalid = check the app.component.html file
+
+
+
+Section 12
+
