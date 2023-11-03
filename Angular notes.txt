@@ -167,3 +167,38 @@ Disabling the submit button when form is invalid = check the app.component.html 
 
 Section 12
 
+Reactive form setup = we have to import in the file app.module.ts the package ReactiveFormsModule and also we have to included in the imports area
+
+Creating the reactive form controls programmatically = see the app.component.html and app.component.ts files
+
+Reactive form basic validation = see the app.component.html and app.component.ts files
+
+Reactive form adding multiple validations = see the app.component.html and app.component.ts files
+
+Complete all Validations = see the app.component.html and app.component.ts files
+
+Reactive form submit and getting form values = see the app.component.html and app.component.ts files
+
+Nested Form Groups = code example
+
+Reactive Form Array = code example, with #skill in an input we can get the inputs of the input  
+
+Reactive Form Builder = code example
+
+Adding Custom Validations I = code example
+
+Adding Custom Validations II = creating a new folder under app folder called validators, creating a new file called nospace.validators.ts, 
+
+import { AbstractControl, ValidationErrors } from "@angular/forms";
+
+export class noSpace {
+	static noSpaceValidations(control: AbstractControl): ValidationErrors | null{
+		let controlValue = control.value as string;	
+		
+		if(controlValue.indexOf(' ') >= 0){
+			return { noSpaceValidator: true }
+		} else {
+			return null
+		}
+	}
+}
