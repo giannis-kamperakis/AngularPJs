@@ -202,3 +202,39 @@ export class noSpace {
 		}
 	}
 }
+
+
+
+Section 13
+
+ng new ang-routing
+
+ng g c post-list
+
+In order to create a route we have to go to the file app.module.ts and we have to import the library RouterModule. Then we have to go at the imports and we have to insert the RouterModule.forRoot([ { path: 'posts', component: PostListComponent } ]). When there is a router and we want to display the contents of the component that we are about to use we have to insert the tag router-outlet
+
+With routerLink the page is not being refreshed, we utilize the files that Angular already downloaded. With href the site reloads and we reload all the files that are needed so the concept of SPA is being disappeared. 
+
+Angulaer RouterLinkActive = with routerLinkActive we can apply a class after we press the button <button routerLink="/posts" routerLinkActive="active">Post List</button>
+
+Code example for Router Parameter Variables    <button [routerLink]="['/post', index]">View Content</button>
+
+Get Router Parameters = paramMap gives all the router parameter values. Code example
+
+What is Observable = rxjs, a sequence of data that is emitted asynchronously or synchronously overtime of period
+
+Observable Next = with .next function we can return values from the observer. Code example
+
+Observable vs Functions = with Observables we can return many things many times (As the definition says) but with a function we can return only one result at a time. 
+
+Observable Subscribe & Unsubscribe = we can close the subscription using the unsubscribe function 
+
+Multiple Router Parameters = Code example
+
+Query Parameters = Code example
+
+Separate Module for Angular Routing = ng g module app-routing --module app --flat, code example
+
+Navigate Programmatically = code example
+
+Wild Card Routers = we will add a page not found now, ng g c fournotfour, then we define the wild card router, it must always the last route
