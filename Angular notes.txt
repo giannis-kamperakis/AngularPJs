@@ -1,3 +1,103 @@
+Section 4
+
+Installing Boostrap = https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
+Bootstrap Container = The boostrap requires the containing element to wrap site content. Container class provides a responsive fixed width container, container-fluid class provides a full width container spanning the entire wdith of the viewport.
+
+Boostrap Grid System = 12 column grid (THIS MEANS that in a row we can create only 12 columns, the 13rd will be on the next row), build with css flex box, fully responsive
+<div class="row">
+    <div class="col-md-1 bg-light border">Col - 1</div>
+    <div class="col-md-1 bg-light border">Col - 2</div>
+    <div class="col-md-1 bg-light border">Col - 3</div>
+    <div class="col-md-1 bg-light border">Col - 4</div>
+    <div class="col-md-1 bg-light border">Col - 5</div>
+    <div class="col-md-1 bg-light border">Col - 6</div>
+    <div class="col-md-1 bg-light border">Col - 7</div>
+    <div class="col-md-1 bg-light border">Col - 8</div>
+    <div class="col-md-1 bg-light border">Col - 9</div>
+    <div class="col-md-1 bg-light border">Col - 10</div>
+    <div class="col-md-1 bg-light border">Col - 11</div>
+    <div class="col-md-1 bg-light border">Col - 12</div>
+    <div class="col-md-1 bg-light border">Col - 13</div>
+</div>
+
+
+Bootstrap Columns = different size columns 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 bg-light p-5 border">col-md-12</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bg-light p-5 border">col-md-6</div>
+        <div class="col-md-6 bg-light p-5 border">col-md-6</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 bg-light p-5 border">col-md-2</div>
+        <div class="col-md-8 bg-light p-5 border">col-md-8</div>
+        <div class="col-md-2 bg-light p-5 border">col-md-2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 bg-light p-5 border">col-md-2</div>
+        <div class="col-md-4 bg-light p-5 border">col-md-4</div>
+        <div class="col-md-5 bg-light p-5 border">col-md-5</div>
+        <div class="col-md-1 bg-light p-5 border">col-md-1</div>
+    </div>
+</div>
+
+
+Bootstrap Responsive Columns = with col-sm-6 we are saying to the browser how much space the column is going to occupy in the small screens
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 bg-light p-5 border">col-md-12</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 bg-light p-5 border">col-md-6</div>
+        <div class="col-md-6 col-sm-6 bg-light p-5 border">col-md-6</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 bg-light p-5 border">col-md-2</div>
+        <div class="col-md-8 col-sm-8 bg-light p-5 border">col-md-8</div>
+        <div class="col-md-2 col-sm-2 bg-light p-5 border">col-md-2</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 bg-light p-5 border">col-md-2</div>
+        <div class="col-md-4 col-sm-4 bg-light p-5 border">col-md-4</div>
+        <div class="col-md-5 col-sm-5 bg-light p-5 border">col-md-5</div>
+        <div class="col-md-1 col-sm-1 bg-light p-5 border">col-md-1</div>
+    </div>
+</div>
+
+
+Boostrap Typography = uses a default font-size=16px, line-height=105, font-family="Helvetica",Helvetica, Arial, sans-serif, all <p> elements have margin-top= 0 and margin-bottom=1rem. Display headings are used to stand out more than normal headings, they have larger font-size and lighter font-weight. <div class="display-1">Display 1</div>
+
+
+Bootstrap Contextual Colors = https://getbootstrap.com/docs/4.0/utilities/colors/
+
+
+Bootstrap Tables = https://getbootstrap.com/docs/4.0/content/tables/
+
+
+Bootstrap Images = We have 3 different types of images: 1. Rounded Corner Images, 2. Circle Images, 3. Thumbnail Images. https://getbootstrap.com/docs/4.0/content/images/
+
+
+Bootstrap Buttons = https://getbootstrap.com/docs/4.0/components/buttons/
+<a href="#" class="btn btn-primary">Link Button</a>
+
+
+Bootstrap Spinner = https://getbootstrap.com/docs/4.0/components/progress/#how-it-works
+https://getbootstrap.com/docs/4.3/components/spinners/
+
+
+Bootstrap Cards = https://getbootstrap.com/docs/4.3/components/card/
+
+
+Bootstrap Inputs = https://getbootstrap.com/docs/4.3/components/forms/, https://getbootstrap.com/docs/4.3/components/alerts/
+
+
+Bootstrap Utility Classes = 
+
+
+
 Section 5
 SPA (Single Page Application) = A Single Pahe Application is an app that doesn't need to reload the page during its use and works within a Web Browser. The files that contain the code for the site are being dowloaded in the Web Browser that's why the page isn't being loaded again.
 
@@ -238,3 +338,23 @@ Separate Module for Angular Routing = ng g module app-routing --module app --fla
 Navigate Programmatically = code example
 
 Wild Card Routers = we will add a page not found now, ng g c fournotfour, then we define the wild card router, it must always the last route
+
+
+
+Section 14
+
+Generate components = 
+ng g c layouts/header
+ng g c layouts/category-navbar
+ng g c layouts/footer
+ng g c pages/home
+ng g c pages/single-category
+ng g c pages/single-post
+ng g c pages/terms-and-conditions
+ng g c pages/contact-us
+ng g c subscription-form
+ng g c comments/comment-form
+ng g c comments/comment-list
+ng g c pages/about-us
+
+Static routing and navigation = 
